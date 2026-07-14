@@ -110,4 +110,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/Pros12345/LeetCode/tree/master/3336-find-the-number-of-subsequences-with-equal-gcd) |
+## Database
+|  |
+| ------- |
+| [0196-delete-duplicate-emails](https://github.com/Pros12345/LeetCode/tree/master/0196-delete-duplicate-emails) |
 <!---LeetCode Topics End-->
