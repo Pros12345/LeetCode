@@ -13,6 +13,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0033-search-in-rotated-sorted-array](https://github.com/Pros12345/LeetCode/tree/master/0033-search-in-rotated-sorted-array) |
 | [0035-search-insert-position](https://github.com/Pros12345/LeetCode/tree/master/0035-search-insert-position) |
 | [0066-plus-one](https://github.com/Pros12345/LeetCode/tree/master/0066-plus-one) |
+| [0605-can-place-flowers](https://github.com/Pros12345/LeetCode/tree/master/0605-can-place-flowers) |
 | [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/Pros12345/LeetCode/tree/master/3336-find-the-number-of-subsequences-with-equal-gcd) |
 ## Hash Table
 |  |
@@ -133,4 +134,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0144-binary-tree-preorder-traversal](https://github.com/Pros12345/LeetCode/tree/master/0144-binary-tree-preorder-traversal) |
 | [0145-binary-tree-postorder-traversal](https://github.com/Pros12345/LeetCode/tree/master/0145-binary-tree-postorder-traversal) |
+## Greedy
+|  |
+| ------- |
+| [0605-can-place-flowers](https://github.com/Pros12345/LeetCode/tree/master/0605-can-place-flowers) |
 <!---LeetCode Topics End-->
