@@ -14,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0035-search-insert-position](https://github.com/Pros12345/LeetCode/tree/master/0035-search-insert-position) |
 | [0066-plus-one](https://github.com/Pros12345/LeetCode/tree/master/0066-plus-one) |
 | [0605-can-place-flowers](https://github.com/Pros12345/LeetCode/tree/master/0605-can-place-flowers) |
+| [3312-sorted-gcd-pair-queries](https://github.com/Pros12345/LeetCode/tree/master/3312-sorted-gcd-pair-queries) |
 | [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/Pros12345/LeetCode/tree/master/3336-find-the-number-of-subsequences-with-equal-gcd) |
 ## Hash Table
 |  |
@@ -21,6 +22,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0001-two-sum](https://github.com/Pros12345/LeetCode/tree/master/0001-two-sum) |
 | [0013-roman-to-integer](https://github.com/Pros12345/LeetCode/tree/master/0013-roman-to-integer) |
 | [0030-substring-with-concatenation-of-all-words](https://github.com/Pros12345/LeetCode/tree/master/0030-substring-with-concatenation-of-all-words) |
+| [3312-sorted-gcd-pair-queries](https://github.com/Pros12345/LeetCode/tree/master/3312-sorted-gcd-pair-queries) |
 ## Two Pointers
 |  |
 | ------- |
@@ -53,6 +55,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0067-add-binary](https://github.com/Pros12345/LeetCode/tree/master/0067-add-binary) |
 | [0069-sqrtx](https://github.com/Pros12345/LeetCode/tree/master/0069-sqrtx) |
 | [0070-climbing-stairs](https://github.com/Pros12345/LeetCode/tree/master/0070-climbing-stairs) |
+| [3312-sorted-gcd-pair-queries](https://github.com/Pros12345/LeetCode/tree/master/3312-sorted-gcd-pair-queries) |
 | [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/Pros12345/LeetCode/tree/master/3336-find-the-number-of-subsequences-with-equal-gcd) |
 | [3658-gcd-of-odd-and-even-sums](https://github.com/Pros12345/LeetCode/tree/master/3658-gcd-of-odd-and-even-sums) |
 ## Bit Manipulation
@@ -83,6 +86,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0033-search-in-rotated-sorted-array](https://github.com/Pros12345/LeetCode/tree/master/0033-search-in-rotated-sorted-array) |
 | [0035-search-insert-position](https://github.com/Pros12345/LeetCode/tree/master/0035-search-insert-position) |
 | [0069-sqrtx](https://github.com/Pros12345/LeetCode/tree/master/0069-sqrtx) |
+| [3312-sorted-gcd-pair-queries](https://github.com/Pros12345/LeetCode/tree/master/3312-sorted-gcd-pair-queries) |
 ## Linked List
 |  |
 | ------- |
@@ -113,6 +117,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Number Theory
 |  |
 | ------- |
+| [3312-sorted-gcd-pair-queries](https://github.com/Pros12345/LeetCode/tree/master/3312-sorted-gcd-pair-queries) |
 | [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/Pros12345/LeetCode/tree/master/3336-find-the-number-of-subsequences-with-equal-gcd) |
 | [3658-gcd-of-odd-and-even-sums](https://github.com/Pros12345/LeetCode/tree/master/3658-gcd-of-odd-and-even-sums) |
 ## Database
@@ -138,4 +143,16 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0605-can-place-flowers](https://github.com/Pros12345/LeetCode/tree/master/0605-can-place-flowers) |
+## Combinatorics
+|  |
+| ------- |
+| [3312-sorted-gcd-pair-queries](https://github.com/Pros12345/LeetCode/tree/master/3312-sorted-gcd-pair-queries) |
+## Counting
+|  |
+| ------- |
+| [3312-sorted-gcd-pair-queries](https://github.com/Pros12345/LeetCode/tree/master/3312-sorted-gcd-pair-queries) |
+## Prefix Sum
+|  |
+| ------- |
+| [3312-sorted-gcd-pair-queries](https://github.com/Pros12345/LeetCode/tree/master/3312-sorted-gcd-pair-queries) |
 <!---LeetCode Topics End-->
