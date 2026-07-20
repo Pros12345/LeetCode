@@ -13,7 +13,7 @@ class Solution {
         // 1. Create a dummy node to act as the head anchor
         ListNode dummy = new ListNode(-1);
         ListNode current = dummy;
-        
+
         // 2. Iterate while both lists have remaining elements
         while (list1 != null && list2 != null) {
             if (list1.val <= list2.val) {
@@ -25,10 +25,10 @@ class Solution {
             }
             current = current.next; // Advance the tracking pointer
         }
-        
+
         // 3. Connect the remaining nodes of the non-empty list
         current.next = (list1 != null) ? list1 : list2;
-        
+
         // 4. Return the head of the sorted merged list
         return dummy.next;
     }
