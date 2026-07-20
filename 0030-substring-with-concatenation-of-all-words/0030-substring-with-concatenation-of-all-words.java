@@ -21,9 +21,7 @@ class Solution {
 
             Map<String, Integer> window = new HashMap<>();
 
-            for (int right = offset;
-                 right + wordLen <= s.length();
-                 right += wordLen) {
+            for (int right = offset; right + wordLen <= s.length(); right += wordLen) {
 
                 String word = s.substring(right, right + wordLen);
 
@@ -36,8 +34,7 @@ class Solution {
 
                     while (window.get(word) > target.get(word)) {
 
-                        String leftWord =
-                                s.substring(left, left + wordLen);
+                        String leftWord = s.substring(left, left + wordLen);
 
                         window.put(leftWord,
                                 window.get(leftWord) - 1);
@@ -50,8 +47,7 @@ class Solution {
 
                         result.add(left);
 
-                        String leftWord =
-                                s.substring(left, left + wordLen);
+                        String leftWord = s.substring(left, left + wordLen);
 
                         window.put(leftWord,
                                 window.get(leftWord) - 1);
