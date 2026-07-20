@@ -2,6 +2,7 @@ class Solution {
     public int romanToInt(String s) {
 
         Map<Character, Integer> map = new HashMap<>();
+
         map.put('I', 1);
         map.put('V', 5);
         map.put('X', 10);
@@ -11,7 +12,9 @@ class Solution {
         map.put('M', 1000);
 
         int result = 0;
-        for (int i = 0; i<s.length(); i++) {
+
+        for (int i = 0; i < s.length(); i++) {
+
             int current = map.get(s.charAt(i));
 
             if (i < s.length() - 1 && current < map.get(s.charAt(i + 1))) {
@@ -20,6 +23,7 @@ class Solution {
                 result += current;
             }
         }
+
         return result;
     }
 }
