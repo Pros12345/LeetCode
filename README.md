@@ -131,16 +131,19 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Tree
 |  |
 | ------- |
+| [0100-same-tree](https://github.com/Pros12345/LeetCode/tree/master/0100-same-tree) |
 | [0144-binary-tree-preorder-traversal](https://github.com/Pros12345/LeetCode/tree/master/0144-binary-tree-preorder-traversal) |
 | [0145-binary-tree-postorder-traversal](https://github.com/Pros12345/LeetCode/tree/master/0145-binary-tree-postorder-traversal) |
 ## Depth-First Search
 |  |
 | ------- |
+| [0100-same-tree](https://github.com/Pros12345/LeetCode/tree/master/0100-same-tree) |
 | [0144-binary-tree-preorder-traversal](https://github.com/Pros12345/LeetCode/tree/master/0144-binary-tree-preorder-traversal) |
 | [0145-binary-tree-postorder-traversal](https://github.com/Pros12345/LeetCode/tree/master/0145-binary-tree-postorder-traversal) |
 ## Binary Tree
 |  |
 | ------- |
+| [0100-same-tree](https://github.com/Pros12345/LeetCode/tree/master/0100-same-tree) |
 | [0144-binary-tree-preorder-traversal](https://github.com/Pros12345/LeetCode/tree/master/0144-binary-tree-preorder-traversal) |
 | [0145-binary-tree-postorder-traversal](https://github.com/Pros12345/LeetCode/tree/master/0145-binary-tree-postorder-traversal) |
 ## Greedy
@@ -168,4 +171,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1260-shift-2d-grid](https://github.com/Pros12345/LeetCode/tree/master/1260-shift-2d-grid) |
+## Breadth-First Search
+|  |
+| ------- |
+| [0100-same-tree](https://github.com/Pros12345/LeetCode/tree/master/0100-same-tree) |
 <!---LeetCode Topics End-->
