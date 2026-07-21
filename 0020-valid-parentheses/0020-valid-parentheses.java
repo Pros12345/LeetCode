@@ -18,8 +18,8 @@ class Solution {
                 char top = stack.pop();
 
                 if ((ch == ')' && top != '(') ||
-                    (ch == '}' && top != '{') ||
-                    (ch == ']' && top != '[')) {
+                        (ch == '}' && top != '{') ||
+                        (ch == ']' && top != '[')) {
                     return false;
                 }
             }
