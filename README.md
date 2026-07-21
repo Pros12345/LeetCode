@@ -13,6 +13,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0033-search-in-rotated-sorted-array](https://github.com/Pros12345/LeetCode/tree/master/0033-search-in-rotated-sorted-array) |
 | [0035-search-insert-position](https://github.com/Pros12345/LeetCode/tree/master/0035-search-insert-position) |
 | [0066-plus-one](https://github.com/Pros12345/LeetCode/tree/master/0066-plus-one) |
+| [0304-range-sum-query-2d-immutable](https://github.com/Pros12345/LeetCode/tree/master/0304-range-sum-query-2d-immutable) |
 | [0605-can-place-flowers](https://github.com/Pros12345/LeetCode/tree/master/0605-can-place-flowers) |
 | [1260-shift-2d-grid](https://github.com/Pros12345/LeetCode/tree/master/1260-shift-2d-grid) |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/Pros12345/LeetCode/tree/master/1979-find-greatest-common-divisor-of-array) |
@@ -171,6 +172,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Prefix Sum
 |  |
 | ------- |
+| [0304-range-sum-query-2d-immutable](https://github.com/Pros12345/LeetCode/tree/master/0304-range-sum-query-2d-immutable) |
 | [3312-sorted-gcd-pair-queries](https://github.com/Pros12345/LeetCode/tree/master/3312-sorted-gcd-pair-queries) |
 ## Monotonic Stack
 |  |
@@ -179,9 +181,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Matrix
 |  |
 | ------- |
+| [0304-range-sum-query-2d-immutable](https://github.com/Pros12345/LeetCode/tree/master/0304-range-sum-query-2d-immutable) |
 | [1260-shift-2d-grid](https://github.com/Pros12345/LeetCode/tree/master/1260-shift-2d-grid) |
 ## Breadth-First Search
 |  |
 | ------- |
 | [0100-same-tree](https://github.com/Pros12345/LeetCode/tree/master/0100-same-tree) |
+## Design
+|  |
+| ------- |
+| [0304-range-sum-query-2d-immutable](https://github.com/Pros12345/LeetCode/tree/master/0304-range-sum-query-2d-immutable) |
 <!---LeetCode Topics End-->
