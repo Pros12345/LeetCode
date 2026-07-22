@@ -3,7 +3,6 @@ import java.util.List;
 
 class Solution {
 
-    // Auxiliary class to store boundaries of each '1' block
     private static class Block {
         int start;
         int end;
@@ -18,14 +17,12 @@ class Solution {
         int n = s.length();
         int totalOnes = 0;
 
-        // Count total '1's in the original string
         for (int i = 0; i < n; i++) {
             if (s.charAt(i) == '1') {
                 totalOnes++;
             }
         }
 
-        // Identify all contiguous blocks of '1's
         List<Block> blocks = new ArrayList<>();
         int i = 0;
         while (i < n) {
@@ -46,7 +43,6 @@ class Solution {
         int[] next1 = new int[k];
         int[] internalGain = new int[k];
 
-        // Precompute neighbors and constant internal gains
         for (int m = 0; m < k; m++) {
             prev1[m] = (m > 0) ? blocks.get(m - 1).end : -1;
             next1[m] = (m < k - 1) ? blocks.get(m + 1).start : n;
@@ -54,12 +50,10 @@ class Solution {
             int startM = blocks.get(m).start;
             int endM = blocks.get(m).end;
 
-            // Formula for internal gain when the block is fully inside [l, r]
             internalGain[m] = startM - endM - prev1[m] + next1[m] - 2;
         }
 
-        // Build the Sparse Table for RMQ (Range Maximum Query)
-        int[][] st = new int[k][20]; // 2^20 is enough for n = 10^5
+        int[][] st = new int[k][20];
         int[] logTable = new int[k + 1];
 
         if (k > 0) {
@@ -87,7 +81,6 @@ class Solution {
                 continue;
             }
 
-            // Binary search for the first block index where start_m > l
             int low = 0, high = k - 1;
             int idxStart = k;
             while (low <= high) {
@@ -100,7 +93,6 @@ class Solution {
                 }
             }
 
-            // Binary search for the last block index where end_m < r
             low = 0;
             high = k - 1;
             int idxEnd = -1;
@@ -114,7 +106,6 @@ class Solution {
                 }
             }
 
-            // If no internal '1' blocks satisfy the boundary constraint
             if (idxStart > idxEnd) {
                 answer.add(totalOnes);
                 continue;
@@ -128,11 +119,9 @@ class Solution {
                 maxGain = Math.max(maxGain, getGain(blocks, prev1, next1, idxStart, l, r));
                 maxGain = Math.max(maxGain, getGain(blocks, prev1, next1, idxEnd, l, r));
             } else {
-                // Check boundaries manually
                 maxGain = Math.max(maxGain, getGain(blocks, prev1, next1, idxStart, l, r));
                 maxGain = Math.max(maxGain, getGain(blocks, prev1, next1, idxEnd, l, r));
 
-                // Query intermediate blocks through Sparse Table in O(1)
                 int L = idxStart + 1;
                 int R = idxEnd - 1;
                 int j = logTable[R - L + 1];
@@ -146,7 +135,6 @@ class Solution {
         return answer;
     }
 
-    // Calculates exact gain dynamically for boundary/single blocks 
     private int getGain(List<Block> blocks, int[] prev1, int[] next1, int m, int l, int r) {
         Block b = blocks.get(m);
         int leftLen = b.start - Math.max(l, prev1[m] + 1);
