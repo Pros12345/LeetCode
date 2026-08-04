@@ -1,6 +1,5 @@
 class Solution {
     public int uniqueXorTriplets(int[] nums) {
-        // Unique elements list
         boolean[] hasOne = new boolean[2048];
         int uniqueCount = 0;
         for (int num : nums) {
@@ -18,7 +17,6 @@ class Solution {
             }
         }
 
-        // Find all unique pair XORs
         boolean[] hasTwo = new boolean[2048];
         for (int x : one) {
             for (int y : one) {
@@ -26,7 +24,6 @@ class Solution {
             }
         }
 
-        // Find all unique triplet XORs
         boolean[] hasThree = new boolean[2048];
         int ans = 0;
         for (int p = 0; p < 2048; p++) {
