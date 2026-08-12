@@ -307,4 +307,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3348-smallest-divisible-digit-product-ii](https://github.com/Pros12345/LeetCode/tree/master/3348-smallest-divisible-digit-product-ii) |
+## Bracket Sequences
+|  |
+| ------- |
+| [0020-valid-parentheses](https://github.com/Pros12345/LeetCode/tree/master/0020-valid-parentheses) |
 <!---LeetCode Topics End-->
