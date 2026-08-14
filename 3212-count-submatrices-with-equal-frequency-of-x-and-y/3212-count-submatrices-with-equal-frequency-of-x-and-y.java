@@ -1,7 +1,7 @@
 class Solution {
     public int numberOfSubmatrices(char[][] grid) {
         int m = grid.length;
-        int n = grid[0].length; // Fixed to grid[0].length for non-square matrices
+        int n = grid[0].length;
         int totalSubmatrices = 0;
 
         // prefixX[i][j] stores total 'X' from (0,0) to (i-1, j-1)
