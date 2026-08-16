@@ -10,18 +10,12 @@ class Solution {
                 hasNonZero = true;
             }
         }
-
-        // If all elements are 0, no non-zero XOR subsequence is possible
         if (!hasNonZero) {
             return 0;
         }
-
-        // If the total XOR sum is non-zero, take the whole array
         if (totalXor != 0) {
             return n;
         }
-
-        // If the total XOR sum is zero, removing one non-zero element makes it non-zero
         return n - 1;
     }
 }
