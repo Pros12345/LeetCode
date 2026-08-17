@@ -13,14 +13,14 @@ class Solution {
     }
 
     private int dp(int i, int j, int[] stoneValue) {
-        if (i == j) return 0;
-        if (memo[i][j] != null) return memo[i][j];
-
+        if (i == j)
+            return 0;
+        if (memo[i][j] != null)
+            return memo[i][j];
         int maxScore = 0;
         for (int k = i; k < j; k++) {
             int leftSum = prefixSum[k + 1] - prefixSum[i];
             int rightSum = prefixSum[j + 1] - prefixSum[k + 1];
-
             if (leftSum < rightSum) {
                 maxScore = Math.max(maxScore, leftSum + dp(i, k, stoneValue));
             } else if (leftSum > rightSum) {
@@ -29,7 +29,6 @@ class Solution {
                 maxScore = Math.max(maxScore, leftSum + Math.max(dp(i, k, stoneValue), dp(k + 1, j, stoneValue)));
             }
         }
-
         return memo[i][j] = maxScore;
     }
 }
