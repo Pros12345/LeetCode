@@ -19,9 +19,9 @@ class Solution {
             boolean right = !seats.contains(6) && !seats.contains(7) && !seats.contains(8) && !seats.contains(9);
             boolean middle = !seats.contains(4) && !seats.contains(5) && !seats.contains(6) && !seats.contains(7);
             if (left && right) {
-                totalGroups += 2; 
+                totalGroups += 2;
             } else if (left || right || middle) {
-                totalGroups += 1; 
+                totalGroups += 1;
             }
         }
         return totalGroups;
