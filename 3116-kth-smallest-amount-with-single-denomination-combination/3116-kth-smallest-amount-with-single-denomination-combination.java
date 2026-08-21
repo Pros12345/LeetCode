@@ -17,7 +17,7 @@ class Solution {
                 ans = mid;
                 high = mid - 1; // Try to find a smaller valid amount
             } else {
-                low = mid + 1;  // Increase the search space
+                low = mid + 1; // Increase the search space
             }
         }
         return ans;
