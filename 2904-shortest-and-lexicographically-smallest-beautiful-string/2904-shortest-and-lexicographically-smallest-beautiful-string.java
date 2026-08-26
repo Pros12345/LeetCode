@@ -2,7 +2,6 @@ class Solution {
     public String shortestBeautifulSubstring(String s, int k) {
         String result = "";
         int minLen = Integer.MAX_VALUE;
-        
         for (int i = 0; i < s.length(); i++) {
             int count = 0;
             StringBuilder sb = new StringBuilder();
@@ -11,7 +10,6 @@ class Solution {
                 if (s.charAt(j) == '1') {
                     count++;
                 }
-                
                 if (count == k) {
                     int currentLen = sb.length();
                     if (currentLen < minLen) {
@@ -26,7 +24,6 @@ class Solution {
                 }
             }
         }
-        
         return result;
     }
 }
