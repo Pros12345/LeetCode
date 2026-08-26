@@ -20,7 +20,7 @@ class Solution {
                             result = sb.toString();
                         }
                     }
-                    break; 
+                    break;
                 }
             }
         }
