@@ -1,65 +1,55 @@
+import java.util.Arrays;
+
 class Solution {
     public String lexGreaterPermutation(String s, String target) {
         int n = s.length();
         int[] count = new int[26];
-        for (char c : s.toCharArray()) {
-            count[c - 'a']++;
-        }
-
-        int bestL = -1;
-        int bestChar = -1;
-        int[] curCount = count.clone();
-
-        // Step 1: Find the maximum index 'i' where we can branch to a larger character
         for (int i = 0; i < n; i++) {
-            int targetChar = target.charAt(i) - 'a';
-            
-            // Check if there is a strictly greater character available
-            for (int c = targetChar + 1; c < 26; c++) {
-                if (curCount[c] > 0) {
-                    bestL = i;
-                    bestChar = c;
-                    break; // The smallest available larger character is always optimal
-                }
-            }
-            
-            // Try to match the target character exactly to keep extending the prefix
-            if (curCount[targetChar] > 0) {
-                curCount[targetChar]--;
-            } else {
-                break; // Cannot match target any further
-            }
+            count[s.charAt(i) - 'a']++;
         }
-
-        // If no valid branching point was found, it's impossible
-        if (bestL == -1) {
-            return "";
-        }
-
-        // Step 2: Reconstruct the lexicographically smallest valid permutation
+        
         StringBuilder sb = new StringBuilder();
-        
-        // 1. Append the matching target prefix
-        sb.append(target.substring(0, bestL));
-        
-        // 2. Update character counts by removing the prefix characters and the chosen branch char
-        int[] finalCount = count.clone();
-        for (int i = 0; i < bestL; i++) {
-            finalCount[target.charAt(i) - 'a']--;
+        if (dfs(0, true, count, sb, target, n)) {
+            return sb.toString();
         }
-        finalCount[bestChar]--;
+        return "";
+    }
+    
+    private boolean dfs(int idx, boolean isPrefix, int[] count, StringBuilder sb, String target, int n) {
+        if (idx == n) {
+            return !isPrefix; 
+        }
         
-        // 3. Append the strictly greater character
-        sb.append((char) ('a' + bestChar));
-        
-        // 4. Append all remaining available characters in ascending sorted order
-        for (int c = 0; c < 26; c++) {
-            while (finalCount[c] > 0) {
+        int start = isPrefix ? (target.charAt(idx) - 'a') : 0;
+        for (int c = start; c < 26; c++) {
+            if (count[c] > 0) {
+                count[c]--;
                 sb.append((char) ('a' + c));
-                finalCount[c]--;
+                
+                boolean nextPrefix = isPrefix && (c == start);
+                
+                if (!nextPrefix) {
+                    fillRemaining(count, sb);
+                    return true;
+                } else {
+                    if (dfs(idx + 1, nextPrefix, count, sb, target, n)) {
+                        return true;
+                    }
+                }
+                
+                sb.setLength(sb.length() - 1);
+                count[c]++;
             }
         }
-
-        return sb.toString();
+        return false;
+    }
+    
+    private void fillRemaining(int[] count, StringBuilder sb) {
+        for (int c = 0; c < 26; c++) {
+            while (count[c] > 0) {
+                count[c]--;
+                sb.append((char) ('a' + c));
+            }
+        }
     }
 }
