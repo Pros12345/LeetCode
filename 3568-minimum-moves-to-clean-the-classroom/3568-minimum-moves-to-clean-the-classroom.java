@@ -23,17 +23,18 @@ class Solution {
             }
         }
 
-        if (litterCount == 0) return 0;
+        if (litterCount == 0)
+            return 0;
 
         // Queue for BFS storing: [x, y, current_energy, mask]
         List<int[]> q = new ArrayList<>();
         int initialMask = (1 << litterCount) - 1;
-        q.add(new int[]{startX, startY, energy, initialMask});
+        q.add(new int[] { startX, startY, energy, initialMask });
 
         boolean[][][][] vis = new boolean[m][n][energy + 1][1 << litterCount];
         vis[startX][startY][energy][initialMask] = true;
 
-        int[] dirs = {-1, 0, 1, 0, -1};
+        int[] dirs = { -1, 0, 1, 0, -1 };
         int moves = 0;
 
         while (!q.isEmpty()) {
@@ -53,12 +54,15 @@ class Solution {
                     int nx = x + dirs[k];
                     int ny = y + dirs[k + 1];
 
-                    if (nx < 0 || nx >= m || ny < 0 || ny >= n) continue;
+                    if (nx < 0 || nx >= m || ny < 0 || ny >= n)
+                        continue;
                     char nextChar = classroom[nx].charAt(ny);
-                    if (nextChar == 'X') continue; // Obstacle
+                    if (nextChar == 'X')
+                        continue; // Obstacle
 
                     int nEnergy = curEnergy - 1;
-                    if (nEnergy < 0) continue; // CRITICAL FIX: Out of energy to even make a move
+                    if (nEnergy < 0)
+                        continue; // CRITICAL FIX: Out of energy to even make a move
 
                     if (nextChar == 'R') {
                         nEnergy = energy; // Reset energy to max upon stepping on 'R'
@@ -71,7 +75,7 @@ class Solution {
 
                     if (!vis[nx][ny][nEnergy][nMask]) {
                         vis[nx][ny][nEnergy][nMask] = true;
-                        nextQ.add(new int[]{nx, ny, nEnergy, nMask});
+                        nextQ.add(new int[] { nx, ny, nEnergy, nMask });
                     }
                 }
             }
