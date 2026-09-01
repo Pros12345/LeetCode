@@ -9,8 +9,6 @@ class Solution {
         for (int i = 0; i < m; i++) {
             Arrays.fill(litterId[i], -1);
         }
-
-        // Locate 'S' and assign IDs to 'L' cells
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 char c = classroom[i].charAt(j);
@@ -25,8 +23,6 @@ class Solution {
 
         if (litterCount == 0)
             return 0;
-
-        // Queue for BFS storing: [x, y, current_energy, mask]
         List<int[]> q = new ArrayList<>();
         int initialMask = (1 << litterCount) - 1;
         q.add(new int[] { startX, startY, energy, initialMask });
@@ -44,12 +40,9 @@ class Solution {
                 int y = state[1];
                 int curEnergy = state[2];
                 int mask = state[3];
-
-                // If all litter collected (mask becomes 0)
                 if (mask == 0) {
                     return moves;
                 }
-
                 for (int k = 0; k < 4; k++) {
                     int nx = x + dirs[k];
                     int ny = y + dirs[k + 1];
@@ -58,19 +51,18 @@ class Solution {
                         continue;
                     char nextChar = classroom[nx].charAt(ny);
                     if (nextChar == 'X')
-                        continue; // Obstacle
+                        continue;
 
                     int nEnergy = curEnergy - 1;
                     if (nEnergy < 0)
-                        continue; // CRITICAL FIX: Out of energy to even make a move
-
+                        continue;
                     if (nextChar == 'R') {
                         nEnergy = energy; // Reset energy to max upon stepping on 'R'
                     }
 
                     int nMask = mask;
                     if (nextChar == 'L' && (mask & (1 << litterId[nx][ny])) != 0) {
-                        nMask ^= (1 << litterId[nx][ny]); // Collect litter
+                        nMask ^= (1 << litterId[nx][ny]);
                     }
 
                     if (!vis[nx][ny][nEnergy][nMask]) {
