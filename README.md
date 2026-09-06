@@ -96,6 +96,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0032-longest-valid-parentheses](https://github.com/Pros12345/LeetCode/tree/master/0032-longest-valid-parentheses) |
 | [0058-length-of-last-word](https://github.com/Pros12345/LeetCode/tree/master/0058-length-of-last-word) |
 | [0067-add-binary](https://github.com/Pros12345/LeetCode/tree/master/0067-add-binary) |
+| [0115-distinct-subsequences](https://github.com/Pros12345/LeetCode/tree/master/0115-distinct-subsequences) |
 | [0344-reverse-string](https://github.com/Pros12345/LeetCode/tree/master/0344-reverse-string) |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/Pros12345/LeetCode/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 | [1768-merge-strings-alternately](https://github.com/Pros12345/LeetCode/tree/master/1768-merge-strings-alternately) |
@@ -174,6 +175,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0032-longest-valid-parentheses](https://github.com/Pros12345/LeetCode/tree/master/0032-longest-valid-parentheses) |
 | [0070-climbing-stairs](https://github.com/Pros12345/LeetCode/tree/master/0070-climbing-stairs) |
+| [0115-distinct-subsequences](https://github.com/Pros12345/LeetCode/tree/master/0115-distinct-subsequences) |
 | [1140-stone-game-ii](https://github.com/Pros12345/LeetCode/tree/master/1140-stone-game-ii) |
 | [1406-stone-game-iii](https://github.com/Pros12345/LeetCode/tree/master/1406-stone-game-iii) |
 | [1510-stone-game-iv](https://github.com/Pros12345/LeetCode/tree/master/1510-stone-game-iv) |
