@@ -27,7 +27,7 @@ class Solution {
     private int[] calculateSubtreeDetails(TreeNode node) {
         // Base case: if the node is null, sum is 0 and count is 0
         if (node == null) {
-            return new int[]{0, 0};
+            return new int[] { 0, 0 };
         }
 
         // Post-order traversal: process left and right subtrees first
@@ -47,6 +47,6 @@ class Solution {
         }
 
         // Return the current sum and count back up to the parent node
-        return new int[]{currentSum, currentCount};
+        return new int[] { currentSum, currentCount };
     }
 }
