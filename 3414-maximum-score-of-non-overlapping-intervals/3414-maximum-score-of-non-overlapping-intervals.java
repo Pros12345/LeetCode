@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class Solution {
-    
+
     // A helper class to group the total weight along with the sorted selected indices list
     private static class Result {
         long weight;
@@ -30,7 +30,7 @@ public class Solution {
     public int[] maximumWeight(List<List<Integer>> intervals) {
         int n = intervals.size();
         List<Interval> indexedIntervals = new ArrayList<>();
-        
+
         for (int i = 0; i < n; i++) {
             List<Integer> curr = intervals.get(i);
             indexedIntervals.add(new Interval(curr.get(0), curr.get(1), curr.get(2), i));
@@ -43,7 +43,7 @@ public class Solution {
         memo = new Result[n][5];
 
         Result optimalResult = dp(indexedIntervals, 0, 4);
-        
+
         // Convert the best indices list into a primitive array
         int[] ans = new int[optimalResult.selected.size()];
         for (int i = 0; i < ans.length; i++) {
@@ -74,7 +74,7 @@ public class Solution {
         List<Integer> takeList = new ArrayList<>();
         takeList.add(curr.originalIndex);
         takeList.addAll(takeNextResult.selected);
-        
+
         // Lexicographically sort the indices list for the current picked combination
         Collections.sort(takeList);
         Result takeResult = new Result(takeWeight, takeList);
