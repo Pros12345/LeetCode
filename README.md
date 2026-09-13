@@ -16,6 +16,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0304-range-sum-query-2d-immutable](https://github.com/Pros12345/LeetCode/tree/master/0304-range-sum-query-2d-immutable) |
 | [0605-can-place-flowers](https://github.com/Pros12345/LeetCode/tree/master/0605-can-place-flowers) |
 | [0628-maximum-product-of-three-numbers](https://github.com/Pros12345/LeetCode/tree/master/0628-maximum-product-of-three-numbers) |
+| [0835-image-overlap](https://github.com/Pros12345/LeetCode/tree/master/0835-image-overlap) |
 | [1140-stone-game-ii](https://github.com/Pros12345/LeetCode/tree/master/1140-stone-game-ii) |
 | [1260-shift-2d-grid](https://github.com/Pros12345/LeetCode/tree/master/1260-shift-2d-grid) |
 | [1386-cinema-seat-allocation](https://github.com/Pros12345/LeetCode/tree/master/1386-cinema-seat-allocation) |
@@ -341,6 +342,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0304-range-sum-query-2d-immutable](https://github.com/Pros12345/LeetCode/tree/master/0304-range-sum-query-2d-immutable) |
+| [0835-image-overlap](https://github.com/Pros12345/LeetCode/tree/master/0835-image-overlap) |
 | [1260-shift-2d-grid](https://github.com/Pros12345/LeetCode/tree/master/1260-shift-2d-grid) |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Pros12345/LeetCode/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
 | [3070-count-submatrices-with-top-left-element-and-sum-less-than-k](https://github.com/Pros12345/LeetCode/tree/master/3070-count-submatrices-with-top-left-element-and-sum-less-than-k) |
