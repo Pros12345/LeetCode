@@ -5,18 +5,13 @@ class Solution {
 
         for (int i = k; i <= n; i++) {
             dp[i] = dp[i - 1];
-
-            // Check palindrome of length k
             if (isPalindrome(s, i - k, i - 1)) {
                 dp[i] = Math.max(dp[i], dp[i - k] + 1);
             }
-
-            // Check palindrome of length k + 1
             if (i >= k + 1 && isPalindrome(s, i - k - 1, i - 1)) {
                 dp[i] = Math.max(dp[i], dp[i - k - 1] + 1);
             }
         }
-
         return dp[n];
     }
 
