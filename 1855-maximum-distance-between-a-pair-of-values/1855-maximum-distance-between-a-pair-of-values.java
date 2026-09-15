@@ -4,16 +4,14 @@ class Solution {
         int maxDist = 0;
         int n1 = nums1.length;
         int n2 = nums2.length;
-
         while (i < n1 && j < n2) {
             if (nums1[i] <= nums2[j]) {
                 maxDist = Math.max(maxDist, j - i);
-                j++; // Try to maximize distance by moving j forward
+                j++;
             } else {
-                i++; // nums1[i] is too large, move i forward to find a smaller value
+                i++;
             }
         }
-
         return maxDist;
     }
 }
