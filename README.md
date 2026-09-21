@@ -50,6 +50,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3501-maximize-active-section-with-trade-ii](https://github.com/Pros12345/LeetCode/tree/master/3501-maximize-active-section-with-trade-ii) |
 | [3513-number-of-unique-xor-triplets-i](https://github.com/Pros12345/LeetCode/tree/master/3513-number-of-unique-xor-triplets-i) |
 | [3514-number-of-unique-xor-triplets-ii](https://github.com/Pros12345/LeetCode/tree/master/3514-number-of-unique-xor-triplets-ii) |
+| [3524-find-x-value-of-array-i](https://github.com/Pros12345/LeetCode/tree/master/3524-find-x-value-of-array-i) |
 | [3567-minimum-absolute-difference-in-sliding-submatrix](https://github.com/Pros12345/LeetCode/tree/master/3567-minimum-absolute-difference-in-sliding-submatrix) |
 | [3568-minimum-moves-to-clean-the-classroom](https://github.com/Pros12345/LeetCode/tree/master/3568-minimum-moves-to-clean-the-classroom) |
 | [3643-flip-square-submatrix-vertically](https://github.com/Pros12345/LeetCode/tree/master/3643-flip-square-submatrix-vertically) |
@@ -167,6 +168,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3513-number-of-unique-xor-triplets-i](https://github.com/Pros12345/LeetCode/tree/master/3513-number-of-unique-xor-triplets-i) |
 | [3514-number-of-unique-xor-triplets-ii](https://github.com/Pros12345/LeetCode/tree/master/3514-number-of-unique-xor-triplets-ii) |
 | [3518-smallest-palindromic-rearrangement-ii](https://github.com/Pros12345/LeetCode/tree/master/3518-smallest-palindromic-rearrangement-ii) |
+| [3524-find-x-value-of-array-i](https://github.com/Pros12345/LeetCode/tree/master/3524-find-x-value-of-array-i) |
 | [3536-maximum-product-of-two-digits](https://github.com/Pros12345/LeetCode/tree/master/3536-maximum-product-of-two-digits) |
 | [3658-gcd-of-odd-and-even-sums](https://github.com/Pros12345/LeetCode/tree/master/3658-gcd-of-odd-and-even-sums) |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/Pros12345/LeetCode/tree/master/3867-sum-of-gcd-of-formed-pairs) |
@@ -213,6 +215,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3302-find-the-lexicographically-smallest-valid-sequence](https://github.com/Pros12345/LeetCode/tree/master/3302-find-the-lexicographically-smallest-valid-sequence) |
 | [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/Pros12345/LeetCode/tree/master/3336-find-the-number-of-subsequences-with-equal-gcd) |
 | [3414-maximum-score-of-non-overlapping-intervals](https://github.com/Pros12345/LeetCode/tree/master/3414-maximum-score-of-non-overlapping-intervals) |
+| [3524-find-x-value-of-array-i](https://github.com/Pros12345/LeetCode/tree/master/3524-find-x-value-of-array-i) |
 ## Stack
 |  |
 | ------- |
