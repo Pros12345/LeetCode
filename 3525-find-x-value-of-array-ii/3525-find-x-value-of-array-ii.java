@@ -14,30 +14,20 @@ class Solution {
         this.n = nums.length;
         this.k = k;
         this.tree = new Node[4 * n];
-        
-        // Initialize tree nodes
         for (int i = 0; i < tree.length; i++) {
             tree[i] = new Node();
         }
-
-        // Pre-reduce elements modulo k to prevent overflow
         for (int i = 0; i < n; i++) {
             nums[i] %= k;
         }
-
         build(nums, 0, 0, n - 1);
-
         int[] ans = new int[queries.length];
         for (int i = 0; i < queries.length; i++) {
             int index = queries[i][0];
             int value = queries[i][1] % k;
             int start = queries[i][2];
             int x = queries[i][3];
-
-            // Update the segment tree
             update(0, 0, n - 1, index, value);
-
-            // Query the suffix range [start, n - 1]
             Node queryResult = query(0, 0, n - 1, start, n - 1);
             ans[i] = queryResult.remain[x];
         }
@@ -92,7 +82,7 @@ class Solution {
     private Node merge(Node left, Node right) {
         Node res = new Node();
         res.prod = (left.prod * right.prod) % k;
-        
+
         for (int i = 0; i < k; i++) {
             res.remain[i] += left.remain[i];
             res.remain[(i * left.prod) % k] += right.remain[i];
