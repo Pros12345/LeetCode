@@ -28,7 +28,7 @@ public class Solution {
                     evaluate(opStack, setStack);
                 }
                 opStack.pop(); // Remove '{'
-                
+
                 // After processing the group, check if it needs to be concatenated with an upcoming element
                 while (!opStack.isEmpty() && opStack.peek() == '*') {
                     evaluate(opStack, setStack);
@@ -38,12 +38,12 @@ public class Solution {
                 if (i > 0 && (expression.charAt(i - 1) == '}' || Character.isLowerCase(expression.charAt(i - 1)))) {
                     opStack.push('*');
                 }
-                
+
                 // Create a singleton set for the character
                 Set<String> currentSet = new HashSet<>();
                 currentSet.add(String.valueOf(ch));
                 setStack.push(currentSet);
-                
+
                 // Collapse immediate concatenations
                 while (!opStack.isEmpty() && opStack.peek() == '*') {
                     evaluate(opStack, setStack);
@@ -80,7 +80,7 @@ public class Solution {
             result.addAll(set1);
             result.addAll(set2);
         }
-        
+
         setStack.push(result);
     }
 }
