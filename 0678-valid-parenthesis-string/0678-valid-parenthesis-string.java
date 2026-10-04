@@ -10,15 +10,15 @@ class Solution {
             } else if (c == ')') {
                 cmin--;
                 cmax--;
-            } else { 
-                cmin--; 
-                cmax++; 
+            } else {
+                cmin--;
+                cmax++;
             }
             if (cmax < 0) {
                 return false;
             }
             cmin = Math.max(cmin, 0);
         }
-                return cmin == 0;
+        return cmin == 0;
     }
 }
