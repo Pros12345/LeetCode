@@ -2,10 +2,10 @@ class Solution {
     public int minInsertions(String s) {
         int insertions = 0;
         int rightNeeded = 0;
-        
+
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
-            
+
             if (c == '(') {
                 // If rightNeeded is odd, a single ')' is hanging.
                 // We must balance it immediately by adding another ')'.
@@ -25,7 +25,7 @@ class Solution {
                 }
             }
         }
-        
+
         // Add any remaining right parentheses needed at the end
         return insertions + rightNeeded;
     }
