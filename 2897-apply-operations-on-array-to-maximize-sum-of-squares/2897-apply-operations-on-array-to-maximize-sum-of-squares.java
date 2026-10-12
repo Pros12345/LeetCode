@@ -17,7 +17,7 @@ class Solution {
             for (int i = 0; i < 30; i++) {
                 if (bitCounts[i] > 0) {
                     currentNumber |= (1L << i);
-                    bitCounts[i]--; 
+                    bitCounts[i]--;
                 }
             }
             totalSumOfSquares = (totalSumOfSquares + (currentNumber * currentNumber) % MOD) % MOD;
