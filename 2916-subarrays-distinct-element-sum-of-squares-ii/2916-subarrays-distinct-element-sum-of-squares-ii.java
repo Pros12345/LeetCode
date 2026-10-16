@@ -3,7 +3,7 @@ import java.util.Map;
 
 class Solution {
     private static final int MOD = 1_000_000_007;
-    
+
     // Segment Tree Nodes
     private long[] sumOfSquares;
     private long[] sumOfCounts;
@@ -20,13 +20,13 @@ class Solution {
 
         for (int j = 0; j < n; j++) {
             int lastIdx = lastSeen.getOrDefault(nums[j], -1);
-            
+
             // Increment the distinct count by 1 for all subarrays starting from lastIdx + 1 to j
             update(1, 0, n - 1, lastIdx + 1, j, 1);
-            
+
             // Add the sum of squares of all subarrays ending at j to the total answer
             totalSum = (totalSum + sumOfSquares[1]) % MOD;
-            
+
             // Record the current position of the element
             lastSeen.put(nums[j], j);
         }
@@ -35,7 +35,8 @@ class Solution {
     }
 
     private void pushDown(int node, int start, int end) {
-        if (lazy[node] == 0) return;
+        if (lazy[node] == 0)
+            return;
 
         long val = lazy[node];
         int mid = start + (end - start) / 2;
@@ -44,13 +45,15 @@ class Solution {
 
         // Update left child
         long leftLen = mid - start + 1;
-        sumOfSquares[leftChild] = (sumOfSquares[leftChild] + 2 * val * sumOfCounts[leftChild] + val * val % MOD * leftLen) % MOD;
+        sumOfSquares[leftChild] = (sumOfSquares[leftChild] + 2 * val * sumOfCounts[leftChild]
+                + val * val % MOD * leftLen) % MOD;
         sumOfCounts[leftChild] = (sumOfCounts[leftChild] + val * leftLen) % MOD;
         lazy[leftChild] = (lazy[leftChild] + val) % MOD;
 
         // Update right child
         long rightLen = end - mid;
-        sumOfSquares[rightChild] = (sumOfSquares[rightChild] + 2 * val * sumOfCounts[rightChild] + val * val % MOD * rightLen) % MOD;
+        sumOfSquares[rightChild] = (sumOfSquares[rightChild] + 2 * val * sumOfCounts[rightChild]
+                + val * val % MOD * rightLen) % MOD;
         sumOfCounts[rightChild] = (sumOfCounts[rightChild] + val * rightLen) % MOD;
         lazy[rightChild] = (lazy[rightChild] + val) % MOD;
 
